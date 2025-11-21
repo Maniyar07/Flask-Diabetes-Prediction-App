@@ -1,4 +1,4 @@
-🩺 Flask Diabetes Prediction App
+##🩺 Flask Diabetes Prediction App
 
 This is a machine learning web application built with Python and the Flask framework to predict the risk of diabetes based on several health indicators. The deployed version is currently hosted on PythonAnywhere.
 
