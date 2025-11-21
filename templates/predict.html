@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='predict.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1 class="title">🩺 Diabetes Prediction System</h1>
+            <p class="subtitle">Enter your health details below to check your diabetes risk.</p>
+
+            <form action="/predict" method="POST" class="input-form">
+
+                <div class="input-group">
+                    <label>Gender</label>
+                    <input type="number" name="gender" placeholder="0 - Female, 1 - Male" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Age</label>
+                    <input type="number" step="any" name="age" placeholder="e.g., 25" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Hypertension</label>
+                    <input type="number" step="any" name="hypertension" placeholder="0 - No, 1 - Yes" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Heart Disease</label>
+                    <input type="number" step="any" name="heart_disease" placeholder="0 - No, 1 - Yes" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Smoking History</label>
+                    <input type="number" step="any" name="smoking_history" placeholder="0 - Never, 1 - Former, 2 - Current" required>
+                </div>
+
+                <div class="input-group">
+                    <label>BMI</label>
+                    <input type="number" step="any" name="bmi" placeholder="e.g., 26.3" required>
+                </div>
+
+                <div class="input-group">
+                    <label>HbA1c Level</label>
+                    <input type="number" step="any" name="HbA1c_level" placeholder="4.5 - 10.0" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Blood Glucose Level</label>
+                    <input type="number" step="any" name="blood_glucose_level" placeholder="70 - 200" required>
+                </div>
+
+                <button type="submit" class="btn">Predict Diabetes Risk</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
